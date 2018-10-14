@@ -3,10 +3,17 @@ import board
 import digitalio
 import adafruit_character_lcd
 
+# lcd_rs = (board.A6) LCD pin 4
+# lcd_en = (board.A5) LCD pin 6
+# lcd_d7 = (board.A1) LCD pin 14
+# lcd_d6 = (board.A2) LCD pin 13
+# lcd_d5 = (board.A3) LCD pin 12
+# lcd_d4 = (board.A4) LCD pin 11
+
 lcd_rs = digitalio.DigitalInOut(board.A6)
 lcd_en = digitalio.DigitalInOut(board.A5)
-lcd_d7 = digitalio.DigitalInOut(board.A2)
-lcd_d6 = digitalio.DigitalInOut(board.A1)
+lcd_d7 = digitalio.DigitalInOut(board.A1)
+lcd_d6 = digitalio.DigitalInOut(board.A2)
 lcd_d5 = digitalio.DigitalInOut(board.A3)
 lcd_d4 = digitalio.DigitalInOut(board.A4)
 
